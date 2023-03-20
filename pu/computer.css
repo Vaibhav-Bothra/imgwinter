@@ -1,0 +1,319 @@
+*{
+    margin: 0px;
+  }
+  /* Navbar container */
+  .navbar {
+      overflow: hidden;
+      background-color:rgb(98, 7, 189);
+      font-family: Arial;
+      margin-top: 0px;
+    }
+  
+    .navbar > a{
+      float: left;
+      font-size: 20px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+    
+    /* Links inside the navbar */
+    
+    
+    /* The dropdown container */
+    .dropdown {
+      float: left;
+      overflow: hidden;
+      margin-top: 25px;
+      margin-bottom: 25px;
+       margin-right: 13px;
+    }
+    
+    /* Dropdown button */
+    .dropdown .dropbtn {
+      font-size: 20px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+     
+      background-color: inherit;
+      font-family: inherit; /* Important for vertical align on mobile phones */
+      margin: 0; /* Important for vertical align on mobile phones */
+      border-color: black;
+    }
+    /*  */
+    /* Add a red background color to navbar links on hover */
+    .navbar  a:hover ,.dropdown:hover .dropbtn {
+      background-color: rgb(245,157,7);
+      color: rgb(0, 0, 0);
+      translate: 8px;
+      text-decoration: underline;
+      border-radius: 10px;
+      border-style: groove;
+      margin-right: 20px;
+    }
+    
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color:white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      text-decoration: none;
+      height: 450px;
+      
+    
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 16px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      margin:18px 0px ;
+      font-size: 20px;
+    }
+    
+    /* Add a grey background color to dropdown links on hover */
+    .dropdown-content a:hover {
+      background-color: #ddd;
+      text-decoration: none;
+      border-color: #ddd;
+      margin-right:15px ;
+  
+    }
+    
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+     display: block;
+    }
+  
+    /*Our logo css here*/
+    .logo{
+      height: 100px;
+      float: left;
+    }
+  
+  .searchentry{
+      float: right;
+      font-size: 15px;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      padding: 8px 16px;
+      text-decoration: none;
+      margin-top: 30px;
+      margin-bottom: 25px;
+    
+    border-radius: 20px;
+  }
+
+  .a1{
+    float: right;
+  }
+  
+  .a1 input {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+  }
+  
+  .a2{
+    display: none;
+    position: absolute;
+    top: 70px;
+    background-color: white;
+    width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-decoration: none;
+  }
+  
+  .a2 a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .searchbtn{
+     height: 37px;
+     width: 40px;
+      float: right;
+      font-size: 20px;
+      color:black;
+      text-align: center;
+      padding: 4px 16px;
+      text-decoration: none;
+      margin-top: 30px;
+      margin-bottom: 25px;
+    margin-right: 20px;
+    border-radius: 20px;
+    background-image: url(./searchlogo.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+      
+  }
+  .searchbtn:hover{
+    cursor: pointer;
+  }
+  /* #photo{
+  height: 1000px
+  } */
+  
+  .mathscunt1{
+  display: flex;
+  padding-left: 80px;
+  padding-top: 50px;
+  }
+  .trigonometry{
+  border: solid black;
+  width: 28%;
+  border-radius: 22px;
+  height: 200px;
+  margin-right:30px;
+  transition: transform .4s;
+  cursor: pointer;
+  background-image: url("./machine\ learning.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  .vector{
+      border: solid black;
+      width: 28%;
+      border-radius: 22px;
+      cursor: pointer;
+      height: 200px;
+      margin-right:30px;
+      margin-left:30px;
+      transition: transform .4s;
+      background-image: url("./java.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      }
+  .algebra{
+          border: solid black;
+          width: 28%;
+          border-radius: 22px;
+          transition: transform .4s;
+          height: 200px;
+          margin-right:30px;
+          margin-left:30px;
+          cursor: pointer;
+          background-image: url("./c++.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+          }
+    .mathscunt1 h3{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  
+    }
+  
+    .mathscunt2{
+      display: flex;
+      padding-left: 80px;
+      padding-top: 50px;
+     
+      }
+      .arithmetic{
+      border: solid black;
+      width: 28%;
+      border-radius: 22px;
+      transition: transform .4s;
+      height: 200px;
+      margin-right:30px;
+      cursor: pointer;
+      background-image: url("./hii.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      }
+      .coordinate{
+          border: solid black;
+          width: 28%;
+          border-radius: 22px;
+          transition: transform .4s;
+          height: 200px;
+          margin-right:30px;
+          margin-left:30px;
+          cursor: pointer;
+          background-image: url("./web\ dev.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+          }
+      .geometry{
+              border: solid black;
+              width: 28%;
+              border-radius: 22px;
+              transition: transform .4s;
+              height: 200px;
+              margin-right:30px;
+              margin-left:30px;
+              cursor: pointer;
+              background-image: url("./sql.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+              }
+        .mathscunt2 h3{
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        }
+
+           
+    .mathscunt1 div:hover{
+     box-shadow: #c56e6e;
+     background-color: aquamarine;
+     transform: scale(1.2);
+     
+    }
+    .mathscunt2 div:hover{
+      box-shadow: #c56e6e;
+      background-color: aquamarine;
+      transform: scale(1.2);
+   
+     }
+     
+     .bottom{
+      width: 100%;
+      height: 25px;
+      background-color:rgb(68, 68, 68);
+      margin-top: 36px;
+      
+      }
+      .bottom2{
+      width: 100%;
+      height: 40px;
+      background-color: black;
+      }
+      .co{
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+        text-decoration-line: underline;
+        background-color: #ec8b30;
+        margin-top: 15px;
+        padding: 6px 0px;
+      }

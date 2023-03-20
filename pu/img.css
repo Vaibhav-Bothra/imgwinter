@@ -1,0 +1,666 @@
+/* Navbar container */
+* {
+  margin: 0px;
+
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  /* background-image: url("bgfi.jpg"); */
+  background-size: contain;
+  /* background-color: rgb(146, 255, 224); */
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(98, 7, 189);
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  /* Important for vertical align on mobile phones */
+  margin: 0;
+  /* Important for vertical align on mobile phones */
+  border-color: black;
+}
+
+/*  */
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(245, 157, 7);
+  color: rgb(0, 0, 0);
+  translate: 0px;
+  text-decoration: underline;
+  border-radius: 10px;
+  border-style: groove;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-decoration: none;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  text-decoration: none;
+  border-color: #ddd;
+  margin-right: 15px;
+
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*Our logo css here*/
+.logo {
+  height: 100px;
+  float: left;
+}
+
+.searchentry {
+  float: right;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-bottom: 25px;
+
+  border-radius: 20px;
+}
+
+.a1 {
+  float: right;
+}
+
+.a1 input {
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  border-radius: 20px;
+}
+
+.a2 {
+  display: none;
+  position: absolute;
+  top: 70px;
+  background-color: white;
+  width: 220px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-decoration: none;
+}
+
+.a2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.a2 a:hover {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: blanchedalmond;
+  width: 185px;
+}
+
+.searchbtn {
+  height: 37px;
+  width: 40px;
+  float: right;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  padding: 4px 16px;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  margin-right: 20px;
+  border-radius: 20px;
+  background-image: url(./searchlogo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.searchbtn:hover {
+  cursor: pointer;
+}
+
+/* #photo{
+height: 1000px
+} */
+
+/* Invite wala box ab */
+.invite {
+  border-color: black;
+  width: 60%;
+  height: 100px;
+  border-radius: 40px;
+  display: inline-block;
+  margin-top: -200px;
+  /* margin-bottom: 100%; */
+  /* padding-bottom: 20%; */
+
+}
+
+.form-inline {
+  display: flex;
+  margin-left: 40px;
+  padding-top: 50px;
+  margin-bottom: 0px;
+  height: 40px;
+}
+
+.invcode {
+  height: 50px;
+  width: 400px;
+  font-size: 15px;
+  border-color: black;
+  margin-left: 20px;
+  padding-left: 30px;
+  margin-top: -90px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.join {
+  width: 80px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 12px;
+  background-color: greenyellow;
+  margin-top: -90px;
+  font-weight: bolder;
+  margin-left: 15px;
+  text-decoration: none;
+}
+.join_q{
+  background-color: greenyellow;
+  font-weight: bolder;
+ 
+}
+
+.joinquiz {
+  text-decoration: none;
+  color: black;
+}
+
+.join_q:hover {
+  background-color: orange;
+}
+
+.invitecode {
+  margin-left: 60px;
+  margin-top: -80px;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.createlink {
+  text-decoration: none;
+  color: black;
+}
+
+.join2 {
+  height: 60px;
+  width: 40%;
+  font-size: 18px;
+  
+  margin-left: 38%;
+  margin-top: -35px;
+  
+  /* z-index: 2; */
+}
+.quizmake{
+  border-color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: orange;
+  color: black;
+  font-weight: bold;
+}
+.quizmake:hover {
+
+  background-color: rgb(10, 140, 196);
+  color: rgb(0, 0, 0);
+
+}
+
+.signin {
+  display: inline-block;
+  /* align-items: center; */
+  justify-content: center;
+  height: 190px;
+  width: 39.5%;
+  text-decoration: none;
+  padding-top: 105px;
+  /* width: 597.24px; */
+  border-radius: 30px;
+  animation: fadeIn 3s;
+
+
+
+  /* -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s; */
+
+}
+.welcomee{
+  animation: fadeIn 3s;
+
+}
+
+#lgoo:hover {
+  transition: transform .4s;
+  transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
+
+.every1 {
+  /* margin-top: 50px; */
+  background-color: antiquewhite;
+
+  /* margin-top: 50px; */
+
+
+
+
+}
+.online{
+
+  background-image: url("./bgg3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.signin4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border-color: rgb(0, 0, 0);
+
+}
+
+.signin2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  margin-bottom: 3%;
+  margin-top: 3%;
+  margin-left: 20%;
+  font-size: 150%;
+}
+
+.signin3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+
+#logoutbtn:hover {
+  background-color: rgb(255, 0, 68);
+
+}
+
+/* .logout{
+  background-color: greenyellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border-color: rgb(0, 0, 0);
+  margin-left: 30%;
+  border-radius: 12px;
+  height: 40px;
+  float: left;
+  margin-top: 1%;
+  margin-bottom: 0%;
+
+} */
+.si4 {
+  background-color: greenyellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border-color: rgb(0, 0, 0);
+  margin-left: 50%;
+  border-radius: 12px;
+  height: 40px;
+}
+
+.si3 {
+  background-color: greenyellow;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border-color: rgb(0, 0, 0);
+  margin-left: 50%;
+  border-radius: 12px;
+  height: 40px;
+}
+
+.si4:hover {
+  background-color: orange;
+  color: black;
+
+}
+
+.si3:hover {
+  background-color: orange;
+  color: black;
+
+}
+
+/*Scroller here*/
+
+
+/* .maths{
+  width: 100px;
+  height: 100px;
+  border: solid black;
+  
+  background-color: aqua;
+ 
+
+}
+.science{
+  width: 100px;
+  height: 100px;
+  border: solid black;
+  background-color: aqua;
+}
+.computer{
+  width: 100px;
+  height: 100px;
+  border: solid black;
+  background-color: aqua;
+}
+.subjects{
+  display: flex;
+} */
+div.scrollmenu {
+  margin-top: 0px;
+  background-color: #02829f;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  width: 300px;
+  height: 300px;
+  font-weight: bold;
+  font-size: 35px;
+  /* box-shadow: #b51010; */
+  border: solid black;
+}
+
+div.scrollmenu a:hover {
+  background-color: rgba(167, 27, 6, 0.461);
+  opacity: 0.75;
+}
+
+/* from here we have maths.css */
+/* .mathsphoto{
+background-image:url("maths1.jpeg");
+height: 300px;
+background-repeat: no-repeat;
+
+} */
+.bottom {
+  width: 100%;
+  height: 25px;
+  background-color: rgb(68, 68, 68)
+}
+
+.bottom2 {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+}
+
+.matt {
+  background-image: url("m1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sci {
+  background-image: url("s1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.comp {
+  background-image: url("c1.jpg");
+  background-repeat: no-repeat;
+  background-size: 330px 330px;
+}
+
+.eng {
+  background-image: url("e1.jpg");
+  background-repeat: no-repeat;
+  background-size: 330px 330px;
+}
+
+.hum {
+  background-image: url("ss1.jpg");
+  background-repeat: no-repeat;
+  background-size: 330px 330px;
+}
+
+.gen {
+  background-image: url("g1.jpg");
+  background-repeat: no-repeat;
+  background-size: 330px 330px;
+}
+
+.bt {
+  float: right;
+  position: relative;
+  top: 10px;
+  right: 30px;
+  margin-left: 25px;
+  text-decoration: none;
+  color: antiquewhite;
+  font-size: 18px;
+}
+
+.bt:hover {
+  color: rgb(236, 85, 85);
+}
+
+#information {
+  background-color: rgb(0, 255, 217);
+  margin-top: 2.5%;
+  width: 97.3%;
+  height: 100%;
+  padding-left: 100px;
+  /* border-radius: 40px; */
+  padding-left: 30px;
+  margin-right: 0px;
+  /* margin-top: 30px  ; */
+  border: groove black;
+ overflow:hidden;
+}
+
+.why {
+  font-size: 360%;
+ text-align: center;
+
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+.desc {
+  font-size: 190%;
+
+
+}
+
+.contact {
+  font-size: large;
+  height: 510px;
+  width: 100%;
+  background-color: blue;
+  border-radius: 10px;
+}
+
+.ti1 {
+  width: 47.5%;
+
+  display: flex;
+  justify-content: center;
+  border: solid;
+  margin-right: 1.66%;
+  margin-left: 1.66%;
+  border-radius: 10px;
+
+}
+
+.ti2 {
+  width: 47.5%;
+  float: right;
+  display: flex;
+  justify-content: center;
+  border: solid;
+  margin-right: 1.66%;
+  border-radius: 10px;
+}
+
+.tiles {
+  margin-top: 40px;
+  display: flex;
+  /* border: solid; */
+}
+
+.ti3 {
+  width: 47.5%;
+  font-size: 30px;
+  border: solid;
+  margin-right: 1.66%;
+  margin-left: 1.66%;
+  border-radius: 10px;
+  padding: 5px;
+  /* display: flex;
+  justify-content: center; */
+
+
+}
+
+.ti4 {
+  width: 47.5%;
+  float: right;
+  border: solid;
+  font-size: 30px;
+  margin-right: 1.66%;
+  border-radius: 10px;
+  padding: 5px;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.titles {
+  display: flex;
+
+}
+
+.border {
+
+  border-radius: 10px;
+}
