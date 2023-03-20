@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="createquiz.css" />
+    <script src="createquiz2.js" async></script>
+  </head>
+  <body>
+   
+    <div class="navbar">
+      <img src="../../logo.png" alt="Quizzer Logo" class="logo" />
+
+      <a href="../../img.html">Home</a>
+
+      <div class="dropdown">
+        <button class="dropbtn">Topic</button>
+        <div class="dropdown-content">
+          <a href="../../maths.html">Mathematics</a>
+          <a href="../../science.html">Science</a>
+          <a href="../../computer.html">Computer</a>
+          <a href="../../english.html">English</a>
+          <a href="../../humanities.html">Humanities</a>
+          <a href="../../general.html">General Knowledge</a>
+        </div>
+      </div>
+      <a href="../../about.html">About Us</a>
+      <a href="../../contact.html">Contacts</a>
+
+      <button class="searchbtn" id="b3" type="submit"></button>
+      <div class="a1">
+        <!-- class="searchentry" -->
+        <input id="b1" type="search" placeholder="Search" aria-label="Search" />
+        <div id="b2" class="a2"></div>
+      </div>
+    </div>
+    <div class="headerdiv"><p class="header" style="margin-left: 5%;">      Quiz Maker</p>
+    <br>
+    <br>
+    <br>
+    </div>
+    <div class="frwhole" >
+      <div class="whole" style="width: 50%;">
+  
+     
+          <form action="/createquiz" method="post">
+
+               <h1 style="margin-left: 10%;">Make Your Own Questions Here</h1>
+               <br><br>
+          <label for="dbname1" style="font-size: 150%;">Choose The Subject:</label>
+        <input list="dbinput" name="dbname" id="dbname1" value="" type="text">
+          <datalist id="dbinput">
+              <option value="mathematics" id="maths2">Select this only</option>
+              <option value="science" id="science2">Select this only</option>
+              <option value="computer" id="computer2">Select this only</option>          
+          </datalist>
+              <button id="dbinput2" type="button">Next</button>
+
+
+
+          <label for="cars" class="chhupa1">Choose The Subtopic:</label>
+            <select name="cars" class="chhupa11" >
+             <option value="" selected disabled hidden>Select an option</option>
+              <option value="trigo">Trignometry</option>
+              <option value="algebra">Algebra</option>
+              <option value="lines">Straight Lines</option>
+            </select>
+           
+               <label for="cars" class="chhupa2">Choose The Subtopic:</label>
+            <select name="cars" class="chhupa22">
+              <option value="" selected disabled hidden>Select an option</option>
+              <option value="bio">Biology</option>
+              <option value="chem">Chemistry</option>
+              <option value="genphy">General physics</option>
+            </select>
+      
+            <label for="cars" class="chhupa3" >Choose The Subtopic:</label>
+            <select name="cars" class="chhupa33">
+              <option value="" selected disabled hidden>Select an option</option>
+              <option value="java">Java</option>
+              <option value="cpp">C++</option>
+              <option value="ml">Machine Learning</option>
+            </select>
+
+           
+       
+      <br><br>
+        <p class="enter">Enter your Question:</p>
+        <textarea name="q" class="text" cols="70%" rows="10%"></textarea>
+
+   <div style="display: flex;">
+
+        <div class="mcq" >
+          <label for="a" class="A">Option A</label>
+          <textarea name="a" id="a" cols="20%" rows="3%"></textarea>
+
+          <label for="b" class="B">Option B</label>
+          <textarea name="b" id="b" cols="30" rows="3"></textarea>
+
+          <label for="c" class="C">Option C</label>
+          <textarea name="c" id="c" cols="30" rows="3"></textarea>
+          
+          <label for="d" class="D">Option D</label>
+          <textarea name="d" id="d" cols="30" rows="3"></textarea>
+   
+
+          <p style="width:100%;">Correct Answer</p>
+          <select name="ca" id="ca">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+          </select>
+          <br>
+          <br>
+         
+          
+        </div>
+              
+               <div class="btnkicl" style="width: 50%; height: 10%;margin-top: 40%; margin-left: 30%;">
+          <button type="submit" class="submitform" >Submit Question</button>
+               </div>
+
+        </div> 
+      
+    </form>    
+      </div>
+
+
+
+
+      <div class="ordata" style="width: 50%;">
+        <h1 style="font-size: 240%; margin-left: 35%;">Also </h1>
+        <br><br>
+        <p class="header2">Get Questions From Our Question Bank</p>
+        <br>
+        <form action="/action_page.php" method="get">
+            <label for="browser" style="font-size: 125%;">Choose Your Topic Here:</label>
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+              <option value="Mathematics">Select this only</option>
+              <option value="Science">Select this only</option>
+              <option value="Computer">Select this only</option>
+             
+            </datalist>
+            <button type="button" class="qbsub">Submit</button>
+          </form>
+       
+          <div class="quizstart">
+           <button class="withoutgrp" type="button" >Create Quiz</button>
+           <!-- <button class="withgrp" type="submit">Play With Groups</button> -->
+
+       
+      </div>
+      <div id="code"> 
+       
+      </div>
+
+
+
+
+           
+
+
+
+
+      </div>
+    </div>
+
+ 
+  <div class="bottom2">
+    <h3 style="color: rgb(255, 255, 255); font-size: 15px;padding-top: 10px; display: inline-block;">© 2023 ENDEAVOR
+      OPERATING COMPANY, LLC.
+      ALL RIGHTS RESERVED. IMG IS AN ENDEAVOR COMPANY.</h3>
+    <a href="contact.html" class="bt">Contacts</a>
+    <a href="about.html" class="bt">About Us</a>
+
+  </div>
+            
+  
+
+    <!-- <script defer src="./createquiz/createquiz.js"></script> -->
+    <!-- <script src="../createquiz2.js" async></script> -->
+  </body>
+</html>
+                                                                            

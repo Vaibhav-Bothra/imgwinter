@@ -1,0 +1,88 @@
+<form action="/que_lines" method="post">
+    <div id="box">Straight Lines</div>
+    <div class="time" id="ti">
+    </div>
+    <div id="qno">
+        <%= dt%>.&nbsp;
+        <%= dt1%>
+    </div>
+    <div id="a">
+        <input type="checkbox" name="B" class="check" onclick="onlyOne(this)">
+        <%= dt2%>
+    </div>
+    <div id="b">
+        <input type="checkbox" name="C" class="check" onclick="onlyOne(this)">
+        <%= dt3%>
+    </div>
+    <div id="c">
+        <input type="checkbox" name="D" class="check" onclick="onlyOne(this)">
+        <%= dt4%>
+    </div>
+    <div id="d">
+        <input type="checkbox" name="A" class="check" onclick="onlyOne(this)">
+        <%= dt5%>
+    </div>
+    <button id="ss" onclick="funnn">Save & Next</button>
+</form>
+<script>
+    // var count=0
+    document.body.style.backgroundImage = "url('dark.jpeg')"
+    var head = document.getElementById("box")
+    head.style.backgroundColor = "rgb(242,202,70)"
+    head.style.textAlign = "center"
+    head.style.fontSize = "160%"
+    head.style.padding = "1%"
+    var a = document.getElementById("qno")
+    var b = document.getElementById("ti")
+    var c = document.getElementById("a")
+    var d = document.getElementById("b")
+    var e = document.getElementById("c")
+    var f = document.getElementById("d")
+    var g = document.getElementById("ss")
+    let time = 60
+    a.style.border = "2px solid black"
+    a.style.display = "inline-block"
+    a.style.padding = "1%"
+    a.style.fontSize = "150%"
+    a.style.margin = "1%"
+    b.style.border = "2px solid black"
+    b.style.display = "inline-block"
+    b.style.float = "right"
+    b.style.padding = "1%"
+    b.style.fontSize = "125%"
+    b.style.margin = "1%"
+    c.style.border = "2px solid black"
+    c.style.padding = "1%"
+    c.style.fontSize = "125%"
+    c.style.margin = "1%"
+    d.style.border = "2px solid black"
+    d.style.padding = "1%"
+    d.style.fontSize = "125%"
+    d.style.margin = "1%"
+    e.style.border = "2px solid black"
+    e.style.padding = "1%"
+    e.style.fontSize = "125%"
+    e.style.margin = "1%"
+    f.style.border = "2px solid black"
+    f.style.padding = "1%"
+    f.style.fontSize = "125%"
+    f.style.margin = "1%"
+    g.style.padding = "1%"
+    g.style.fontSize = "125%"
+    g.style.marginLeft = "45%"
+    let int = setInterval(() => {
+        b.innerText = `Time Left: ${time}`
+        time--
+        if (b.innerText == "Time Left: 0") {
+            b.innerText = "Time is up."
+            g.click()
+            clearInterval(int)
+        }
+    }, 1000);
+    function onlyOne(checkbox) {
+        var checkboxes = document.querySelectorAll('.check')
+        checkboxes.forEach((item) => {
+            if (item !== checkbox) item.checked = false
+        })
+    }
+</script>

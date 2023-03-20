@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/433888fe69.js" crossorigin="anonymous"></script>
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+   <div class="logolol"><img  src="logo2.png" alt=""></div> 
+    <div class="container">
+        <div class="login">
+            <h1 style="color: rgb(0, 0, 0);">LOGIN TO QUIZZER</h1>
+        </div>
+       
+        <form action="/login" method="post">
+            <div class="user">
+                <h3>Username:</h3>
+                <i class="fa fa-user"></i>
+                <input type="text" style="color: black" name="username" id="us" placeholder="Enter your Username">
+            </div>
+            <div class="pwd">
+                <h3>Password:</h3>
+                <i class="fa fa-lock"></i>
+                <input type="password" style="color: black;" name="password" id="pd" placeholder="Enter your password">
+            </div>
+            <div class="sub">
+                <button class="btn1">Submit</button>
+            </div>
+        </form>
+        <div class="signin">
+            <h3 style="color: rgb(100, 33, 132);">--------------OR--------------</h3>
+        </div>
+        <div class="channel">
+            <button class="btn"><img src="channeli.png" alt="channeli" id="i"> Continue with Channel i<i class="fa-sharp fa fa-arrow-right" id="sym"></i></button>
+        </div>
+        <div class="up" style="color: rgb(100, 33, 132);"> 
+           Not have an account?<a href="/signup" target="_blank" style="color:rgb(100, 33, 132);" class="signup1">&nbsp; Sign Up</a>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

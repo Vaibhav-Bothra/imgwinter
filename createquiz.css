@@ -1,0 +1,385 @@
+/* Navbar container */
+* {
+    margin: 0px;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: rgb(98, 7, 189);
+    font-family: Arial;
+  
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+    border-color: black;
+  }
+  
+  /*  */
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: rgb(245, 157, 7);
+    color: rgb(0, 0, 0);
+    translate: 0px;
+    text-decoration: underline;
+    border-radius: 10px;
+    border-style: groove;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-decoration: none;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    text-decoration: none;
+    border-color: #ddd;
+    margin-right: 15px;
+  
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /*Our logo css here*/
+  .logo {
+    height: 100px;
+    float: left;
+  }
+  
+  .searchentry {
+    float: right;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 25px;
+  
+    border-radius: 20px;
+  }
+  
+  .a1{
+    float: right;
+  }
+  
+  .a1 input {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+  }
+  
+  .a2{
+    display: none;
+    position: absolute;
+    top: 70px;
+    background-color: white;
+    width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-decoration: none;
+  }
+  
+  .a2 a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .a2 a:hover{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    width: 185px;
+  }
+  
+  .searchbtn {
+    height: 37px;
+    width: 40px;
+    float: right;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding: 4px 16px;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    margin-right: 20px;
+    border-radius: 20px;
+    background-image: url(./searchlogo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .searchbtn:hover {
+    cursor: pointer;
+  }
+  
+  /* #photo{
+  height: 1000px
+  } */
+  .header{
+    font-size:300%;
+    font-weight: bold;
+    padding-left: 35%;
+
+    /* margin-left: 40px; */
+
+  }
+  .headerdiv{
+   background-color: rgb(202, 252, 25);
+width: 100%;
+
+
+  }
+.enter{
+font-size: 150%;
+
+
+
+}
+.whole{
+ border: groove black;
+ padding-left: 4%;
+ padding-right: 2%;
+ 
+
+
+}
+.mcq{
+width: 40%;
+margin-left: 10%;
+font-size: 140%;
+
+}
+#ca{
+
+    font-size: 90%;
+}
+.header2{
+
+    font-size: 200%;
+}
+.frwhole{
+
+    display: flex;
+    margin-left: 0%;
+    background-color: rgba(255, 158, 247, 0.211);
+}
+.ordata{
+border: groove black;
+width: 100%;
+margin-right: 0%;
+margin-top: 0%;
+margin-left: 0%;
+padding-left: 2%;
+}
+body{
+
+
+    background-image: url("./.jpeg");
+}
+.chhupa1{
+display: none;
+margin-top:8%;
+font-size: 150%;
+
+}
+
+.chhupa2{
+    display: none;
+    margin-top:4%;
+    font-size: 150%;
+}
+.chhupa3{
+   display: none;
+   margin-top:4%;
+   font-size: 150%;
+        
+     }
+     .chhupa11{
+      display: none;
+      margin-top:0%;
+      font-size: 100%;
+      
+      }
+      
+      .chhupa22{
+          display: none;
+          margin-top:0%;
+          font-size: 100%;
+      }
+      .chhupa33{
+         display: none;
+         margin-top:0%;
+         font-size: 100%;
+              
+           }
+     .quizstart{
+    margin-top: 10%;
+
+     }
+
+
+.withoutgrp{
+    background-color: aqua;
+    border-color: aquamarine;
+    box-shadow: #ddd;
+    font-size: 100%;
+    padding: 1.5%;
+    margin-right: 20%;
+    margin-left: 5%;
+
+     
+
+}
+#dbinput2{
+  background-color: aqua;
+  border-color: aquamarine;
+  box-shadow: #ddd;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+#dbinput2:hover{
+  background-color: orange;
+  border-color: yellow;
+
+}
+.qbsub{
+
+  background-color: aqua;
+  border-color: aquamarine;
+  box-shadow: #ddd;
+}
+.qbsub:hover{
+  background-color: orange;
+  border-color: yellow;
+
+}
+.withoutgrp:hover{
+background-color: orange;
+border-color: yellow;
+}
+.withgrp{
+    background-color: aqua;
+    border-color: aquamarine;
+    box-shadow: #ddd;
+    font-size: 100%;
+    padding: 1.5%;
+  
+     
+
+}
+.withgrp:hover{
+background-color: orange;
+border-color: yellow;
+
+}
+
+.submitform:hover{
+  background-color: orange;
+  border-color: yellow;
+  }
+.bottom {
+  width: 100%;
+  height: 25px;
+  background-color: rgb(68, 68, 68)
+}
+
+.bottom2 {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+}
+.bt {
+  float: right;
+  position: relative;
+  top: 10px;
+  right: 30px;
+  margin-left: 25px;
+  text-decoration: none;
+  color: antiquewhite;
+  font-size: 18px;
+}
+
+.bt:hover {
+  color: rgb(236, 85, 85);
+}
+/* .withoutgrp:focus{
+background-color:rgb(236, 85, 85) ;
+}
+.withgrp:focus{
+background-color:rgb(236, 85, 85) ;
+} */
+.submitform{width: 140%; height: 20%;margin-left: -40%;margin-bottom: 10%;padding: 7.5%; background-color: aqua;
+          border-color: aquamarine;
+          box-shadow: #ddd;
+          font-size: 100%;
+}
+
+#code{
+display: none;
+
+}

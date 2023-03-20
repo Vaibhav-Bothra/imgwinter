@@ -1,0 +1,114 @@
+.container{
+    width: 400px;
+    margin: auto;
+    border: 2px solid black;
+    justify-content: center;
+    text-align: center;
+    height: 500px;
+    box-sizing: border-box;
+    padding-top: 25px;
+    /* background-color: rgba(255, 255, 255, 0.171); */
+    
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 4%;
+}
+
+.container input{
+    font-size: 15px;
+    height: 23px;
+    margin-left:8px ;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    color: black;
+}
+body{
+    background-image: url(bgg.jpeg);
+    background-size: 100% 120%;
+}
+.user h3{
+    font-size: 20px;
+    text-align: left;
+    margin-top: 45px;
+    margin-bottom: 10px;
+    padding-left: 88px;
+}
+
+.pwd h3{    
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 10px;
+    padding-left: 88px;
+}
+
+.login{
+    text-align: center;
+    text-decoration:underline;
+}
+
+.sub{
+    margin-top:18px ;
+}
+
+.btn1{
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid black;
+    background-color: rgb(100, 33, 132);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.btn1:hover{
+    cursor: pointer;
+    background-color: rgb(121, 144, 216);
+    font-size: 17px;
+}
+
+#i{
+    height: 17px;
+    padding-top: 6px;
+    padding-right: 10px;
+    padding-left: 0;
+}
+
+#sym{
+    height: 17px;
+    float: right;
+    padding-top: 6px;
+}
+
+.btn{
+    width: 320px;
+    font-size: 18px;
+    border: 2px solid  black;
+    background-color:rgb(100, 33, 132);
+    border-radius: 20px;
+    height: 40px;
+}
+
+.btn:hover{
+    outline: none;
+    cursor: pointer;
+    background-color:rgb(121, 144, 216);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);;
+}
+
+.up{
+    margin-top: 45px;
+    font-size: 16px;
+}
+.signup1{
+
+    text-decoration: none;
+}
+.logolol{
+width: 240px;
+height: 140px;
+display: flex;
+}
+::placeholder{
+    color: black;
+}
